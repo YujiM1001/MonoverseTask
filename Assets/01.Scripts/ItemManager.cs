@@ -87,18 +87,19 @@ public class ItemManager : SingletonGameObject<ItemManager>
     /// <param name="item">세팅하고자 하는 아이템 데이터</param>
     public void SetItemColor(Item item)
     {
-        SetColor(item, GetItemColor());
+        SetColor(item, GetRandomItemColor());
     }
 
     // 아이템 컬러를 colorsItem내 컬러로 랜덤+겹치지 않게 리턴.  
-    Color GetItemColor()
+    Color GetRandomItemColor()
     {
-        int indexColor = Random.Range(0, colorsItem.Count);
+        int indexColor = 0;
 
-        while(!IsOnlyColor(colorsItem[indexColor]))
+        do
         {
             indexColor = Random.Range(0, colorsItem.Count);
         }
+        while(!IsOnlyColor(colorsItem[indexColor]));
 
         return colorsItem[indexColor];
     }

@@ -7,8 +7,6 @@ public enum LocationItem
 	INVENTORY,
 }
 
-// TODO : 테스트 끝나면 제거 
-[System.Serializable]
 public class Item
 {
 	// 고유 컬러 
