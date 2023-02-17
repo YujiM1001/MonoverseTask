@@ -5,13 +5,11 @@ public class ItemSlot : MonoBehaviour
     PlayerController playerController;
     Item item;
 
-    public void Init(Item item, PlayerController playerController)
+    public void Init(Item myitem, PlayerController playerController)
     {
-        this.playerController = playerController;
-        this.item = item;
-        this.item.group = GroupItem.INVENTORY;
-
-        this.item.colorA = 255f;
+        this.playerController       = playerController;
+        item                        = myitem;
+        item.location               = LocationItem.INVENTORY;
         GetComponent<Image>().color = ItemManager.Instance.GetColor(item);
     }
 

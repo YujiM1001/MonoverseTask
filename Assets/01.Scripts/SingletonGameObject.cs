@@ -8,6 +8,16 @@ public class SingletonGameObject<T> : MonoBehaviour where T : Component
     {
         get
         {
+            if(object.ReferenceEquals(instance, null))
+            {
+                GameObject obj = new GameObject(typeof(T).ToString());
+                instance = obj.AddComponent<T>();
+
+                if(Application.isPlaying)
+                {
+                    DontDestroyOnLoad(obj);
+                }
+            }
             return instance;
         }
     }

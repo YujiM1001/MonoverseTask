@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum GroupItem
+public enum LocationItem
 {
 	NONE = -1,
 	MAP = 0,
@@ -22,6 +22,6 @@ public class Item
 	public float positionY = 0f;
 	public float positionZ = 0f;
 
-	// 위치 : 맵, 인벤 
-	public GroupItem group = GroupItem.NONE;
+	// 현재 아이템의 위치 : 맵, 인벤 
+	public LocationItem location = LocationItem.NONE;
 }
