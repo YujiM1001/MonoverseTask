@@ -830,7 +830,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749053318}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e495735016f756246a45e79bd83422db, type: 3}
   m_Name: 
@@ -838,19 +838,17 @@ MonoBehaviour:
   map: {fileID: 411384782}
   itemObject: {fileID: 1527029331}
   textCountCreatedItem: {fileID: 611245553}
-  textTimer: {fileID: 0}
-  colorItems:
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 1, g: 1, b: 0, a: 0}
-  - {r: 0, g: 1, b: 0, a: 0}
-  - {r: 0, g: 0, b: 1, a: 0}
-  - {r: 0.5882353, g: 0, b: 1, a: 0}
-  - {r: 0, g: 1, b: 1, a: 0}
-  - {r: 1, g: 0.62144035, b: 0, a: 0}
-  - {r: 0.990566, g: 0.4627451, b: 0.85099983, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 1, b: 0.81251574, a: 0}
-  shownItems: []
+  colorsItem:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.7241974, b: 0, a: 1}
+  - {r: 1, g: 1, b: 0, a: 1}
+  - {r: 0.48609436, g: 1, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0.8556876, a: 1}
+  - {r: 0, g: 0.4528302, b: 0.10224724, a: 1}
+  - {r: 0, g: 0.091824055, b: 1, a: 1}
+  - {r: 0.34555674, g: 0, b: 1, a: 1}
+  - {r: 0.95868343, g: 0.2783019, b: 1, a: 1}
+  - {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
 --- !u!4 &749053320
 Transform:
   m_ObjectHideFlags: 0
@@ -1170,15 +1168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53701c003e784e84fabc72dad53613af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item:
-    colorR: 0
-    colorG: 0
-    colorB: 0
-    colorA: 0
-    positionX: 0
-    positionY: 0
-    positionZ: 0
-    group: -1
 --- !u!135 &1527029333
 SphereCollider:
   m_ObjectHideFlags: 0
